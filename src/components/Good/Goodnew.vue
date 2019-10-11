@@ -263,6 +263,7 @@ methods:{
       this.newone.group_time=res.data.group_time;
       this.newone.group_price=res.data.group_price;
       this.newone.price=res.data.price;
+      this.newone.free=res.date.free;
       this.newone.detail=res.data.detail;
       this.newone.cover=res.data.cover;
       this.newone.start=res.data.start;
