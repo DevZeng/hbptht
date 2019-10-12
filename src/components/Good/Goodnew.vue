@@ -263,12 +263,12 @@ methods:{
       this.newone.group_time=res.data.group_time;
       this.newone.group_price=res.data.group_price;
       this.newone.price=res.data.price;
-      this.newone.free=res.date.free;
       this.newone.detail=res.data.detail;
       this.newone.cover=res.data.cover;
       this.newone.start=res.data.start;
       this.newone.end=res.data.end;
       this.newone.refund=res.data.refund;
+      this.newone.free = res.data.free;
       this.newone.delivery=res.data.delivery;
 
       this.date=[res.data.start,res.data.end]
@@ -439,7 +439,6 @@ methods:{
           group_price:this.newone.group_price,
           price:this.newone.price,
           cover:this.newone.cover,
-          free:this.newone.free,
           detail:this.newone.detail,
           categories:this.categories,
           start:this.newone.start,
