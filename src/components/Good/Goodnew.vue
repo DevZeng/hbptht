@@ -444,6 +444,7 @@ methods:{
           start:this.newone.start,
           end:this.newone.end,
           refund:this.newone.refund,
+          free:this.newone.free,
           type_id:this.type_id,
           delivery:this.newone.delivery
         };
