@@ -109,6 +109,9 @@ export const groupDel = params => { return axios.get(`${base}/del/group/buy`+`${
 
 export const groupSet = params => { return axios.get(`${base}/check/group/buy`+`${params}`).then(res => res.data)}
 
+export const getself = params => { return axios.get(`${base}/self/getaddress`+`${params}`).then(res => res.data)}
+export const addself = params => { return axios.post(`${base}/self/addaddress`,params).then(res => res.data)}
+export const delself = params => { return axios.post(`${base}/self/deleteaddress`,params).then(res => res.data)}
 
 
 //订单

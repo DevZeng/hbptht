@@ -9,7 +9,7 @@ import Console from '@/components/index/Console'
 import Goodlist from '@/components/Good/Goodlist'
 import Goodtype from '@/components/Good/Goodtype'
 import Goodnew from '@/components/Good/Goodnew'
-
+import Goodself from '@/components/Good/Goodself'
 
 
 // import Shoplist from '@/components/Shop/Shoplist'
@@ -63,6 +63,20 @@ let router = new Router({
     {path: '/Good/Goodnew',component: Goodnew,name: '添加拼团',menuShow: false,meta:{permission: ''}},
     ]
 },
+
+{
+    leaf: true,
+    path: '/',
+    name: '自提地址',
+    component: Home,
+    redirect: '/Good/Goodself',
+    menuShow: true,
+    iconCls: 'iconfont menu-good',
+    children: [
+    {path:'/Good/Goodself',component:Goodself,name:"自提地址",menuShow:true,meta:{permission:''} }
+    ]
+},
+
 {
     leaf: true,
     path: '/',

@@ -15,6 +15,7 @@
         <el-button type="primary" size="mini" @click="newone">发布拼团</el-button>
       </el-form-item>
     </el-form>
+    
 
     <el-table :data="list" border stripe style="width:1650px" size="small">
       <el-table-column prop="id" label="ID" min-width="50" align="center">

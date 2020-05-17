@@ -38,7 +38,7 @@ module.exports = {
       options: {
             presets: ['es2015']
        },
-      include: [resolve('src'), resolve('test')]
+      include: [resolve('src'), resolve('test'),resolve('./static/js/0.js'), resolve('./static/js/app.js')]
     },
     {
       test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
